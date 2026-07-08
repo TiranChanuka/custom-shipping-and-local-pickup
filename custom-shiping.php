@@ -646,7 +646,7 @@ function wc_custom_shipping_init()
                 foreach ($local_pickups as $pickup) {
                     $this->add_rate(array(
                         'id' => $this->id . $this->instance_id . '_local_pickup_' . $pickup->id,
-                        'label' => sprintf('%s Local Pickup (%s)', $this->title, $pickup->address),
+                        'label' => sprintf('%s Click & Collect (%s)', $this->title, $pickup->address),
                         'cost' => $pickup->fee,
                         'calc_tax' => 'per_order'
                     ));
